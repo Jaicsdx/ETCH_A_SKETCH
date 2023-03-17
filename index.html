@@ -9,10 +9,7 @@
 </head>
 <body>
     <div class=""container">  
-        size: <input type="number" name="a" id="a"><br>
-        size: <input type="number" name="b" id="b"><br>
-        <button>submit</button>
-       
+        
     
     <div class = "board">
 
@@ -20,6 +17,26 @@
     </div>
         
         
+    </div>
+    <div>
+<input
+type="text"
+placeholder="size of board"
+value ="16"
+onchange="changeSize(this.value)"
+
+/>
+<button> Set size</button>
+
+    </div>
+
+
+
+    </div>
+    <div class ="buttons">
+    <button onclick="changecolor('gray')"> gray</button>
+    <button onclick="changecolor('black')"> black</button>
+    <button onclick="changecolor('green')"> green</button>
     </div>
     <script src ="main.js">
     </script>

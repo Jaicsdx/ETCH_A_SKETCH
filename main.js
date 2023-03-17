@@ -1,8 +1,3 @@
-let a = document.querySelector("[name='a']")
-let b = document.querySelector("[name='b']");
-document.querySelector("button").addEventListener("click", ()=>{
-    
-    pixalate(a)})
 
 
 function pixalate(a)
@@ -16,17 +11,31 @@ board.style.gridTemplateRows = `repeat(${a}, 1fr)`
 for (let i=0; i<256; i++)
 {
     let square =document.createElement("square")
-    square.style.backgroundColor ="red";
+    square.style.backgroundColor ="white";
     board.insertAdjacentElement("beforeend",square)
     square.addEventListener("mouseover", ()=>{
-    square.style.backgroundColor ="blue";})
+    square.style.backgroundColor =color;})
 
 
 }
 
 }
+pixalate(16)
+
+function changeSize(input)
+{
+    pixalate(input)
+}
 
 
+function colorsquare()
+{
+    this.style.backgroundColor =color;
+
+}
+function changecolor(choice)
+{
+    color=choice;}
 
 
     /* let a = document.querySelector("[name='a']"),
