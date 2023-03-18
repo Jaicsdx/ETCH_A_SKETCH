@@ -3,4 +3,27 @@
     height: 500px;
     display: grid;
     flex: auto;
+    margin: auto;
 }   
+
+
+.container
+{
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    text-align: center;
+  }
+  .size{
+    text-align: center;
+    margin: auto;
+    border: 2px solid green
+  }
+  .buttons
+  {
+    margin:auto;
+ 
+    border: 1px solid green;
+    text-align: center;
+  }
